@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iWish</title>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/kendo.web.js"></script>
+    <link href="/stylesheets/kendo.common.css" rel="stylesheet"/>
+    <link href="/stylesheets/kendo.default.css" rel="stylesheet"/>
+
+    <script>
+        /*********************************/
+        $(document).ready(function () {
+            $("#menu").kendoMenu();
+        });
+        /*********************************/
+    </script>
+</head>
+<body>
+
+<div id="example" class="k-content">
+    <div id="megaStore">
+        <ul id="menu">
+            <li>
+                心愿
+            </li>
+            <li>
+                我的心愿
+            </li>
+            <li>
+                消息
+            </li>
+            <li>
+                设置
+            </li>
+        </ul>
+    </div>
+    <style scoped>
+        #menu h2 {
+            font-size: 1em;
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+
+        #template img {
+            margin: 5px 20px 0 0;
+            float: left;
+        }
+
+        #template {
+            width: 380px;
+        }
+
+        #template ol {
+            float: left;
+            margin: 0 0 0 30px;
+            padding: 10px 10px 0 10px;
+        }
+
+        #template:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        #template .k-button {
+            float: left;
+            clear: left;
+            margin: 5px 0 5px 12px;
+        }
+    </style>
+
+</div>
+
+
+</body>
+</html>
